@@ -1,0 +1,170 @@
+html{color:#000;background:#FFF}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}
+table{border-collapse:collapse;border-spacing:0}
+fieldset,img{border:0}
+address,caption,cite,code,dfn,em,strong,th,var {font-style:normal;font-weight:normal}
+ol,ul{list-style:none}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+q:before,q:after{content:''}
+abbr,acronym{border:0;font-variant:normal}
+sup{vertical-align:text-top}
+sub{vertical-align:text-bottom}
+input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;*font-size:100%}
+legend{color:#000}#yui3-css-stamp.cssreset{display:none}
+
+#sidebar {
+    width: 35px;
+    background-color: #e1e1e1;
+    padding-top: 200px;
+    position: fixed;
+    height: 100%;
+    z-index: 100;
+}
+
+#sidebar ul .item {
+	font: 12px/1.5 arial,tahoma,SimSong;
+    text-align: center;
+    margin-top: 5px;
+	cursor: pointer;
+}
+
+#sidebar #closeBar {
+    position: absolute;
+    bottom: 30px;
+    width: 35px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.nav-content {
+    background: #e1e1e1;
+    width: 200px;
+    position: fixed;
+    min-height: 100%;
+    border: 1px solid black;
+    z-index: 99;
+    opacity: 0;
+}
+
+.nav-content .nav-con-close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.sidebar-move-left {
+    animation-name: sml;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes sml {
+    from {
+     }
+    to {
+        transform: translateX(-35px);
+    }
+
+}
+
+.closeBar-move-right {
+    animation-name: cmr;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes cmr {
+    from {
+    }
+    to {
+        transform: translateX(85px) rotate(405deg) scale(1.5);
+    }
+}
+
+
+.sidebar-move-right {
+    animation-name: smr;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes smr {
+    from {
+    }
+    to {
+        transform: translateX(35px);
+    }
+}
+
+.closeBar-move-left {
+    animation-name: cml;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes cml {
+    from {
+        transform: rotate(405deg) scale(1.5);
+    }
+    to {
+        transform: translateX(-85px) rotate(0deg) scale(1);
+    }
+}
+
+
+.menuContent-move-right {
+    animation-name: mmr;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes mmr {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        transform: translateX(200px);
+    }
+}
+
+.menuContent-move-left {
+    animation-name: mml;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes mml {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+}
+
+.menuContent-move-up {
+    animation-name: mmu;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes mmu {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        transform: translateY(-250px);
+    }
+}
